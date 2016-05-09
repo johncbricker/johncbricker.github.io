@@ -1,0 +1,151 @@
+html { box-sizing: border-box; }
+* { margin: 0; padding: 0; box-sizing: inherit; }
+
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: ‘Lucida Console’, Monaco, monospace;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.4em;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Typography */
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+
+/* Header + Navigation */
+header {
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+}
+
+header h1 a {
+    font-size: 64px;
+    float: left;
+    margin-top: 15px;
+}
+
+/* Layout */
+.container {
+    max-width:980px;
+    margin: 60px auto;
+}
+
+ul.weeklist {
+    text-align: center;
+    margin-top: 150px;
+}
+
+ul.weeklist li.week {
+    display: inline-block;
+    padding-right: 20px;
+
+}
+
+ul.thumbnails {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+ul.thumbnails li.thumb {
+    margin: 15px;
+    width: 1200px;
+}
+
+}
+
+/* Content */
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.content h2 {
+    margin: 10px 0px 10px;
+}
+
+.content p.medium {
+    font-size: 13px;
+    color: gray;
+    margin: 10px 0px 10px;
+}
+
+.content img {
+    margin-bottom: 10px;
+}
+
+.image {
+    display: none;
+} 
+
+a: hover + div {
+    display: block;
+}
+
+.statement h1 {
+    font-size: 50px;
+    margin: 20px;
+    margin-bottom: 30px;
+    line-height: 50px;
+}
+
+p {
+    margin: 20px;
+    max-width: 550px;
+}
+
+
+/* Footer */
+footer nav {
+    float: left;
+    bottom: 20px;
+}
+
+footer nav ul {
+    list-style:none;
+
+}
+
+footer nav ul li {
+    display: inline-block;
+    margin: 1em;
+}
+
+footer nav ul li a {
+    font-size: 2em;
+}
+
+/* Media Queries */
+@media screen and (max-width: 780px) {
+    header nav {
+        position: fixed;
+        float: left;
+        bottom: 20px;
+    }
+    header nav ul li {
+        margin: 0px 0px 5px;
+        display: block;
+    }
+    .content {
+        padding: 20px;
+    }
+}
+
